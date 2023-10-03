@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Comfortaa:wght@300&display=swap');
+
+body{
+    font-family: 'Carter One', cursive;
+    background-color: #FFD4B2;
+    background-image: url(./images/imagen_x.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 52px;
+    color:rgb(46, 245, 235);
+    /*background-color: rgb(9, 143, 60);*/
+    -webkit-text-stroke: 2px rgb(241, 74, 8) ;
+
+    border-radius: 25px;
+}
+
+.subtitulo{
+    font-size: 25px;
+    color:lightseagreen;
+    /*background-color: lightgoldenrodyellow;*/
+    -webkit-text-stroke: 0.09px black;
+    border-radius: 20px;
+
+
+}
+.tarjetas, .tarjeta-ataques{
+    display: flex;
+}
+.tarjeta-de-mokepon{
+    width: 190px;
+    height: 100px;
+    background-color: #CEEDC7;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 10px; 
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #1c8874;
+
+}
+
+.tarjeta-de-mokepon:hover{
+ cursor: pointer;
+ color: #29c9ab;
+    
+}img{
+    width: 80px;  
+}
+input{
+    display: none;
+    /*gap: 15px;*/
+}
+#boton-mascota{
+    font-family: 'Comfortaa', cursive;
+    /*margin:20px 0px 0px 0px;*/
+    margin-top: 30px;
+    color: #1c8874;
+    background: lightgoldenrodyellow;
+    width: 202px;
+    height: 38px;
+    border: 2px solid #1c8874;
+    border-radius: 20px;
+}
+
+/* "SEGUNDA" PESTAÑA*/
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#boton-fuego, #boton-agua,#boton-tierra{
+    font-family: 'Comfortaa', cursive;
+    /*margin:20px 0px 0px 0px;*/
+    margin-top: 30px;
+    color: #1c8874;
+    background: lightgoldenrodyellow;
+    width: 202px;
+    height: 38px;
+    border: 2px solid #1c8874;
+    border-radius: 20px;
+}
+
+#mensajes{
+    width: 280px;
+    background: rgb(191, 248, 191);
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar{
+    color: rgb(241, 74, 8);
+    font-family: 'Comfortaa', cursive;
+    -webkit-text-stroke: 1px  rgb(241, 74, 8);
+    border: none;
+    background-color: transparent;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 200px 200px;
+
+}
+
+#vidas-jugador,#vidas-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    color:  #1c8874;
+    border-radius: 20px;
+    margin: 20px;
+}
+@media (max-width: 360px){
+    .tarjetas, .tarjeta-ataques{
+        flex-direction: column;
+    }
+    
+}
